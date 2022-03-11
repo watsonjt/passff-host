@@ -49,7 +49,9 @@ export PATH=/c/tools/gpg/GnuPG/bin:$PATH
 #+end_src
 *** my bashrc
 Using pacman
+
 install pass
+
 install winpty
 
 the alias gpgw is only used within msys2 shell to communicate with gpg.exe
@@ -85,6 +87,11 @@ function start_gpg_agent()
 
 ** Windows with WSL - Debian based
 /Info:/ I got this working with wsl before msys, so these are copied steps from previous work. It should work, but is untested with this repos passff.py... raise an issue if it doesnt work and I'll look into it.
+------------
+In windows install vcxsrv
+
+From here, assume in a debian based wsl instance
+
 Install gtk pinentry
 #+begin_src shell
 sudo apt-get install pinentry-gtk-2
@@ -106,7 +113,7 @@ Custom pinentry script - place in /usr/local/bin/{scriptname}
   esac
 
 #+end_src
-Setup gpg confs
+Setup gpg conf
 
 /NOTE: the pinentry-program line, modify it to match your pinentry script path/
 #+begin_src shell
