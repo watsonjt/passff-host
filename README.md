@@ -1,3 +1,7 @@
+windows setup
+===============
+[Windows users, follow instructions here before installing](WIN_SETUP.org)
+
 passff-host
 ===========
 
